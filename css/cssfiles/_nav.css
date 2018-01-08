@@ -19,6 +19,8 @@
     text-transform: uppercase;
 }
 
+/* Media Query */
+
 @media (min-width: 768px) {
     #logo,
     #logo-footer {
