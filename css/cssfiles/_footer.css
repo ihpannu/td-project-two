@@ -14,6 +14,13 @@
     display: none;
 }
 
+#logo-footer:hover {
+    animation: none;
+}
+
+
+/* Media query  */
+
 @media (min-width: 768px) {
     .mobile-footer {
         display: none;
