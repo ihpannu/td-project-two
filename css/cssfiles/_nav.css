@@ -1,6 +1,7 @@
 #logo,
 #logo-footer {
     font-size: 1.15em;
+    border: none;
 }
 
 .nav {
@@ -10,14 +11,38 @@
 }
 
 .nav li {
-    padding: 20px 10px;
+    padding: 2em 10px;
+}
+
+.nav a:hover {
+    animation: hoverIn .1s forwards;
 }
 
 .nav a {
     color: #36383B;
     font-size: 1em;
     text-transform: uppercase;
+    animation: hoverOut .1s ease-in-out;
 }
+
+@keyframes hoverIn {
+    0% {
+        border-bottom: 0 solid #444141;
+    }
+    100% {
+        border-bottom: 4px solid #444141;
+    }
+}
+
+@keyframes hoverOut {
+    0% {
+        border-bottom: 4px solid #444141;
+    }
+    100% {
+        border-bottom: 0 solid #444141;
+    }
+}
+
 
 /* Media Query */
 
