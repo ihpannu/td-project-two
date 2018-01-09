@@ -1,8 +1,10 @@
 #logo,
 #logo-footer {
-    font-size: 1.15em;
+    font-size: 1.25em;
     border: none;
     animation: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav {
@@ -13,10 +15,11 @@
 
 .nav li {
     padding: 2em 10px;
+    position: relative;
 }
 
 .nav a:hover {
-    animation: hoverIn .1s forwards;
+    color: #E94A61;
 }
 
 .nav a {
@@ -24,24 +27,6 @@
     font-size: 1em;
     text-transform: uppercase;
     animation: hoverOut .1s ease-in-out;
-}
-
-@keyframes hoverIn {
-    0% {
-        border-bottom: 0 solid #444141;
-    }
-    100% {
-        border-bottom: 4px solid #444141;
-    }
-}
-
-@keyframes hoverOut {
-    0% {
-        border-bottom: 4px solid #444141;
-    }
-    100% {
-        border-bottom: 0 solid #444141;
-    }
 }
 
 
@@ -57,10 +42,32 @@
         justify-content: flex-end;
     }
     .nav li {
-        margin: 10px 0;
+        /* margin: 10px 0; */
         align-self: center;
     }
     .nav ul {
         flex-direction: row;
+    }
+    .brackets a:before,
+    .brackets a:after {
+        position: absolute;
+        opacity: 0;
+        top: 30px;
+        transition: all 0.3s;
+    }
+    .brackets a:before {
+        content: '(';
+        left: 0px;
+        transform: translateX(10px);
+    }
+    .brackets a:after {
+        content: ')';
+        right: 0px;
+        transform: translateX(-10px);
+    }
+    .brackets a:hover:before,
+    .brackets a:hover:after {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

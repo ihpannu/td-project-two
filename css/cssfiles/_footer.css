@@ -1,3 +1,4 @@
+
 .mobile-footer ul {
     display: flex;
     flex-direction: row;
@@ -5,17 +6,17 @@
     align-content: center;
 }
 
-.mobile-footer a {
+.mobile-footer a, .mobile-footer li {
     color: #faebd7;
     font-size: .8rem;
 }
 
-.footer-nav {
-    display: none;
+.footer-nav a:hover {
+    color: #E94A61;
 }
 
-#logo-footer:hover {
-    animation: none;
+.footer-nav {
+    display: none;
 }
 
 
