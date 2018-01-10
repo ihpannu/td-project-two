@@ -19,6 +19,9 @@
     text-transform: uppercase;
 }
 
+
+/* Tablet and Desktop View  */
+
 @media (min-width: 768px) {
     #logo,
     #logo-footer {
