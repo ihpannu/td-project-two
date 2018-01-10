@@ -1,16 +1,15 @@
+/* Grid Layout starts here  */
+
+.portfolio-header {
+    margin: 2em 0;
+}
+
 .portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     text-align: center;
     color: #faebd7;
-    
 }
 
 .portfolio div {
-    max-width: 350px;
-    align-self: center;
     margin: 0 10px;
 }
 
@@ -23,8 +22,51 @@
     margin-bottom: 1em;
 }
 
+.portfolio img {
+    border-radius: 3px;
+}
+
 
 /* Media queries  */
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+@media (min-width: 786px) {
+    .portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio img:hover {
+        transform: scale(1.2);
+        transition: .1s;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* I used flex-box and Grid system both worked fine but I like Grid system better FlexBox Layout Code 
+
+.portfolio {
+    display: flex; I used flexbox first please check my flexbox code as well.
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio div {
+    max-width: 350px;
+    align-self: center;
+}
 
 @media (min-width: 1024px) {
     .portfolio {
@@ -33,4 +75,4 @@
     .portfolio div {
         max-width: 300px;
     }
-}
+} */
