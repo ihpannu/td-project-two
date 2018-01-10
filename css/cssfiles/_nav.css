@@ -1,8 +1,6 @@
 #logo,
 #logo-footer {
     font-size: 1.25em;
-    border: none;
-    animation: none;
     text-transform: uppercase;
     font-weight: bold;
 }
